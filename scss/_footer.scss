@@ -1,10 +1,10 @@
     /* FOOTER */
 #cont-foot{
-    padding-top: 60px;
+    padding-top: $p-4 + 44;
 }
 .copy{
     color: $color-blanco;
-    padding: 12px;
+    padding: $p-3;
     font-size: 0.9em;
 }
 .contenedor-icon {
@@ -45,7 +45,7 @@
         font-size: 0.6em;
         background: $color-blanco;
         color: $color-blanco;
-        padding: 5px 8px;
+        padding: $p-1 $p-2;
         border-radius: 5px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         opacity: 0;

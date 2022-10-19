@@ -6,6 +6,16 @@ $color-negro:#000000;
 $color-blanco: #ffffff;
 $color-violeta-oscuro: #55283c;
 $color-aqua: #47b39d;
+$color-botones: #331f27;
+
+$p-0: 0px;
+$p-1: 4px;
+$p-2: 8px;
+$p-3: 12px;
+$p-4: 16px;
+
+
+
 
 // Mixin
 @mixin dis-grid($display, $template, $gap-row, $gap-column) {

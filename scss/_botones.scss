@@ -4,21 +4,32 @@
     text-decoration: none;
     background-color: transparent;
     color: $color-negro;
-    border: 2px solid #331f27;
+    border: 2px solid $color-botones;
     border-radius: 4px;
 
     &:hover{
-        background: #331f27 ;
-        border: 2px solid #331f27;
+        background: $color-botones ;
+        border: 2px solid $color-botones;
         color: #ffffff;
     }
     &:active{
-        background: #331f27 !important ;
-        border: 2px solid #331f27 !important;
+        background: $color-botones !important ;
+        border: 2px solid $color-botones !important;
     }
 }
+
+.btn-aceptar{
+    @extend .btn-primary;
+    background-color: $color-botones;
+    color: $color-blanco;
+    &:hover{
+        background-color: $color-naranja;
+        color: $color-negro;
+    }
+}
+
 .botones{
-    padding: 32px;
+    padding: $p-4 $p-4+16 $p-4 $p-4+16;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -29,10 +40,10 @@
         background: $color-azul-oscuro;
         font-size: 1.5em;
         border-radius: 4px 24px;
-        padding: 8px 8px;
+        padding: $p-2 $p-2;
         color: $color-blanco;
         width: 300px;
-        margin-top: 16px;
+        margin: 4px 0 16px 0;
 
         &:hover{
             border-radius: 24px 4px;
@@ -45,14 +56,14 @@
 }
 #btn-filtros{
     @extend .botones;
-    padding: 0px;
+    padding: $p-0;
     display: flex;
     flex-wrap: wrap;
     width: 200px;
     text-align: center;
 
     input{
-        padding: 0px;
+        padding: $p-0;
         width: 300px;
         height: 50px;
     }

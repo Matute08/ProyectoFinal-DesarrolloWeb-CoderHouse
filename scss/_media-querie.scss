@@ -2,6 +2,9 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1399px){
 
+    .navbar-logo{
+        font-size: 1.5em;
+    }
     /* CARDS */
     .card-title{
         font-size: 1.3em;
@@ -50,7 +53,8 @@
     /* BOTONES */
     #btn-filtros{
         input{
-            padding: 0px;
+            padding: $p-0;
+            margin-top: 8px;
             height: 50px;
         }  
     }
@@ -60,6 +64,9 @@
         @include dis-grid(grid, repeat(2,1fr),16px,0);
         margin-top: 16px;
         margin-bottom: 16px; 
+    }
+    .contenedor-icon{
+        padding-top: $p-3;
     }
 }
 
@@ -83,13 +90,22 @@
     .card-responsive{
         @include dis-grid(grid, repeat(3,1fr),0 ,0);
     }
+    .card-adopcion{
+        margin-right: 8px;
+        height: 80%;
+    }
     /* BOTONES */
     .btn-primary{
         font-size: 1.2em;
     }
+    .botones{
+        input{
+            padding: 0;
+        }
+    }
     #btn-filtros{
         input{
-            padding: 0px;
+            padding: $p-0;
             height: 50px;
             margin-top: 16px;           
         }
@@ -101,6 +117,7 @@
     .campo-form{
         select{
             font-size: 1em;
+            margin-bottom: 4px;
         }
         input{
             font-size: 1em;        
@@ -128,7 +145,7 @@
     }
     .lista-detalles{
         ul{
-            padding: 0;
+            padding: $p-0;
             
             li{
                 display: grid;
@@ -142,12 +159,12 @@
     }
     /* FOOTER */
     .contenedor-icon{
-        padding-right: 8px;
+        padding-right: $p-2;
         width: 250px;
-        padding-top: 25px;
+        padding-top: $p-4+9;
     }
     #cont-foot{
-        padding-top: 0;
+        padding-top: $p-0;
     }
 
 }
@@ -159,8 +176,8 @@
         font-size: 1.2em;
     }
     .nav-item {
-        padding-left: 3rem;
-        padding-bottom: 1rem;
+        padding-left: $p-4+32;
+        padding-bottom: $p-4;
     }
     .dropdown-item{
         font-size: 0.7em;
@@ -177,12 +194,12 @@
         font-size: 1.2em;
     }
     .texto-mihistoria{
-        padding: 0 20px 0 20px;
+        padding: $p-0 $p-4+4 $p-0 $p-4+4;
     }
     /* CARDS */
     .card-responsive {
         @include dis-grid(grid, 1fr, 0, 0);
-        padding: 0px;
+        padding: $p-0;
     }
     .card-title{
         font-size: 1.3em;
@@ -193,6 +210,11 @@
     /* BOTONES */
     .btn-primary{
         font-size: 1.2em;
+    }
+    .botones{
+        input{
+            padding: 0;
+        }
     }
     /* FORMS */
     .form-registrar{
@@ -244,7 +266,7 @@
     }
     .lista-detalles{
         ul{
-            padding: 0;
+            padding: $p-0;
 
             li{
                 display: grid;
@@ -260,12 +282,12 @@
     /* FOOTER */
 
     .contenedor-icon{
-        padding-right: 8px;
+        padding-right: $p-2;
         width: 250px;
-        padding-top: 25px;
+        padding-top: $p-4+9;
     }
     #cont-foot{
-        padding-top: 0;
+        padding-top: $p-0;
     }
     /* PAGINACION */
     .paginacion{

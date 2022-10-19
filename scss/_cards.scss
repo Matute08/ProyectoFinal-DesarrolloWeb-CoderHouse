@@ -2,7 +2,7 @@
 .card-responsive{
     @include dis-grid(grid, repeat(4,1fr), 0, 18px);
     margin: 16px;
-    padding: 0 8px;
+    padding: $p-0 $p-2;
 }
 .card{
     background: #8f6277;

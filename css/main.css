@@ -64,7 +64,6 @@ body {
 /* TITULOS */
 .titulo-home {
   padding: 16px;
-  font-size: 3em;
   padding: 16px;
   text-decoration: underline;
   color: #47b39d; }
@@ -76,7 +75,6 @@ body {
 
 .titulo-principal {
   color: #47b39d;
-  font-size: 1.1em;
   display: flex;
   justify-content: center; }
   .titulo-principal h1 {
@@ -93,7 +91,6 @@ body {
 .titulo-seccion {
   color: #47b39d;
   padding: 12px;
-  font-size: 1.3em;
   height: min-content; }
 
 /* TEXTOS */
@@ -115,7 +112,7 @@ body {
   grid-row-gap: 0;
   grid-column-gap: 18px;
   margin: 16px;
-  padding: 0 8px; }
+  padding: 0px 8px; }
 
 .card {
   background: #8f6277;
@@ -154,14 +151,14 @@ body {
 .efecto-form {
   background: rgba(143, 98, 119, 0.2);
   border-radius: 18px;
-  padding: 0 18px 18px;
+  padding: 0px 18px 18px;
   margin-top: 18px;
   width: 100%; }
 
 #fecha-filtro {
   width: 200px;
   height: 50px;
-  padding: 0 0 0 4px;
+  padding: 0px 0px 0px 4px;
   border-radius: 8px;
   border: #000000 solid 2px;
   font-weight: 600; }
@@ -225,23 +222,30 @@ textarea {
     width: 350px; }
 
 /* BOTONES */
-.btn-primary {
+.btn-primary, .btn-aceptar {
   font-size: 1.5em;
   text-decoration: none;
   background-color: transparent;
   color: #000000;
   border: 2px solid #331f27;
   border-radius: 4px; }
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-aceptar:hover {
     background: #331f27;
     border: 2px solid #331f27;
     color: #ffffff; }
-  .btn-primary:active {
+  .btn-primary:active, .btn-aceptar:active {
     background: #331f27 !important;
     border: 2px solid #331f27 !important; }
 
+.btn-aceptar {
+  background-color: #331f27;
+  color: #ffffff; }
+  .btn-aceptar:hover {
+    background-color: #eb6b56;
+    color: #000000; }
+
 .botones, #btn-filtros {
-  padding: 32px;
+  padding: 16px 32px 16px 32px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -254,7 +258,7 @@ textarea {
     padding: 8px 8px;
     color: #ffffff;
     width: 300px;
-    margin-top: 16px; }
+    margin: 4px 0 16px 0; }
     .botones input:hover, #btn-filtros input:hover {
       border-radius: 24px 4px;
       background: #eb6b56;
@@ -281,7 +285,7 @@ textarea {
   .paginacion ul {
     list-style: none;
     text-align: center;
-    padding: 16px 0; }
+    padding: 16px 0px; }
     .paginacion ul li {
       display: inline-block;
       margin-right: 8px; }
@@ -329,7 +333,7 @@ textarea {
 
 .datos-contacto div {
   line-height: 1.5;
-  margin-left: 32px;
+  margin: 0px 24px 0px 24px;
   padding: 12px;
   background: rgba(235, 107, 86, 0.6);
   color: #ffffff;
@@ -377,7 +381,7 @@ textarea {
     font-size: 0.6em;
     background: #ffffff;
     color: #ffffff;
-    padding: 5px 8px;
+    padding: 4px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -413,12 +417,14 @@ textarea {
 
 /* MEDIA QUERIE */
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .navbar-logo {
+    font-size: 1.5em; }
   /* CARDS */
   .card-title {
     font-size: 1.3em; }
   .card-text {
     font-size: 1.1em; }
-  .btn-primary {
+  .btn-primary, .btn-aceptar {
     font-size: 1.2em; }
   .card-responsive {
     grid-template-columns: 1fr 1fr 1fr; }
@@ -446,6 +452,7 @@ textarea {
   /* BOTONES */
   #btn-filtros input {
     padding: 0px;
+    margin-top: 8px;
     height: 50px; }
   /* DATOS MASCOTAS */
   .datos-responsive {
@@ -454,7 +461,9 @@ textarea {
     grid-row-gap: 16px;
     grid-column-gap: 0;
     margin-top: 16px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .contenedor-icon {
+    padding-top: 12px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* NAVBAR */
@@ -472,9 +481,14 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 0;
     grid-column-gap: 0; }
+  .card-adopcion {
+    margin-right: 8px;
+    height: 80%; }
   /* BOTONES */
-  .btn-primary {
+  .btn-primary, .btn-aceptar {
     font-size: 1.2em; }
+  .botones input, #btn-filtros input {
+    padding: 0; }
   #btn-filtros input {
     padding: 0px;
     height: 50px;
@@ -483,7 +497,8 @@ textarea {
   .form-registrar {
     grid-template-columns: repeat(3, 1fr); }
   .campo-form select {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 4px; }
   .campo-form input {
     font-size: 1em; }
   .form-contacto-registrar {
@@ -499,7 +514,7 @@ textarea {
   .detalles-mascotas {
     grid-template-columns: 1fr; }
   .lista-detalles ul {
-    padding: 0; }
+    padding: 0px; }
     .lista-detalles ul li {
       display: grid; }
   .datos-responsive {
@@ -515,15 +530,15 @@ textarea {
     width: 250px;
     padding-top: 25px; }
   #cont-foot {
-    padding-top: 0; } }
+    padding-top: 0px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /* NAVBAR */
   .navbar-logo {
     font-size: 1.2em; }
   .nav-item {
-    padding-left: 3rem;
-    padding-bottom: 1rem; }
+    padding-left: 48px;
+    padding-bottom: 16px; }
   .dropdown-item {
     font-size: 0.7em; }
   /* TITULOS */
@@ -533,7 +548,7 @@ textarea {
   .texto-inicial {
     font-size: 1.2em; }
   .texto-mihistoria {
-    padding: 0 20px 0 20px; }
+    padding: 0px 20px 0px 20px; }
   /* CARDS */
   .card-responsive {
     display: grid;
@@ -546,8 +561,10 @@ textarea {
   .card-text {
     font-size: 1em; }
   /* BOTONES */
-  .btn-primary {
+  .btn-primary, .btn-aceptar {
     font-size: 1.2em; }
+  .botones input, #btn-filtros input {
+    padding: 0; }
   /* FORMS */
   .form-registrar {
     width: 100%;
@@ -588,7 +605,7 @@ textarea {
   .detalles-mascotas {
     grid-template-columns: 1fr; }
   .lista-detalles ul {
-    padding: 0; }
+    padding: 0px; }
     .lista-detalles ul li {
       display: grid; }
   .datos-responsive {
@@ -604,7 +621,7 @@ textarea {
     width: 250px;
     padding-top: 25px; }
   #cont-foot {
-    padding-top: 0; }
+    padding-top: 0px; }
   /* PAGINACION */
   .paginacion ul {
     display: grid;
