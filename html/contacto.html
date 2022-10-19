@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/Logo_BusCatDog_Favicon.png">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="buscatdog, perros, gatos, buscador de mascotas, mascotas perdidas, mascotas encontradas, mascotas en adopcion, contacto, contactame, comunicate conmigo, mascotas, santa rosa la pampa.">
+    <meta name="description" content="pagina de contacto de buscatdpog, el buscador de perros y gatos. Aqui podras contactarme.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Conexion con Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Conexion con Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Conexion con css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>BusCatDog || Contacto</title>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+                <!-- LOGO -->
+                <a class="navbar-brand navbar-logo" href="../index.html">
+                    <img src="../img/Logo_BusCatDog.png" alt="Bootstrap" width="80" height="80">BUSCATDOG
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- LISTA MENU -->
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <!-- DROPDOWN -->
+                        <li
+                            class="nav-item dropdown pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BUSQUEDA
+                            </a>
+                            <ul class="dropdown-menu p-3 pb-3">
+                                <li class="p-1"><a class="dropdown-item" href="../html/mascotaperdida.html">MASCOTAS
+                                        <br> PERDIDAS</a></li>
+                                <li class="p-1"><a class="dropdown-item"
+                                        href="../html/mascotasencontradas.html">MASCOTAS <br> ENCONTRADAS</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="../html/registrarmascota.html">REGISTRAR
+                                        <br> MASCOTA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" href="../html/adopcion.html">ADOPCIÓN</a>
+                        </li>
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" href="../html/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section>
+            <div class="container vh-100 text-center ">
+                <!-- ROW 1 -->
+                <div class="row ">
+                    <div class="col titulo-principal">
+                        <h1>Contacto</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 m-1 mt-5 pt-1 efecto-form ">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Ingresa tu nombre</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Juan Lopez">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Ingresa tu email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="jlopez@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Ingresa tu mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boton -->
+                <div class="botones">
+                    <input type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" value="ENVIAR">
+                </div>
+            </div>
+
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">¡MENSAJE ENVIADO CON ÉXITO!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El mensaje fue enviado correctamente.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row justify-content-center contenedor-footer" id="cont-foot">
+                <div class="col-lg-4">
+                    <h3 class="titulo-seccion">Síguenos en nuestras redes</h3>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="contenedor-icon">
+                        <li class="icon facebook">
+                            <span class="icon-nombre">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </li>
+                        <li class="icon twitter">
+                            <span class="icon-nombre">Twitter</span>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </li>
+                        <li class="icon instagram">
+                            <span class="icon-nombre">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col contenedor-footer">
+                    <p class="copy">© 2022 Matias Gonzalez Autelli / Todos los derechos reservados </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

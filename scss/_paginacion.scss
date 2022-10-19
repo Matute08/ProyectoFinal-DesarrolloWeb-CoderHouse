@@ -1,0 +1,33 @@
+    /* PAGINACION */
+.paginacion{
+    margin: 18px 0;
+    display: flex;
+    justify-content: center;
+
+    ul{
+        list-style: none;
+        text-align: center;
+        padding: 16px 0;
+
+        li{
+            display: inline-block;
+            margin-right: 8px;
+
+            a{
+                display: block;
+                padding: 8px 18px;
+                color: $color-blanco;
+                background: $color-azul-oscuro;
+                text-decoration: none;
+                border-radius: 22px;
+                font-weight: 600;
+
+                &:hover{
+                    background: $color-naranja;
+                    color: $color-negro;
+                    transition: all 1s ease;
+                }
+            }
+        }
+    }
+}

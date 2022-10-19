@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/Logo_BusCatDog_Favicon.png">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="buscatdog, perros, gatos, buscador de mascotas, mascotas perdidas, mascotas encontradas, mascotas en adopcion, encontradas, mascotas, santa rosa la pampa.">
+    <meta name="description" content="pagina de mascotas encontradas de buscatdpog, el buscador de perros y gatos. Aqui podras visualizar las mascotas encontradas que fueron registradas.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Conexion con Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Conexion con css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title> BusCatDog || Mascotas Encontradas</title>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+                <!-- LOGO -->
+                <a class="navbar-brand navbar-logo" href="../index.html">
+                    <img src="../img/Logo_BusCatDog.png" alt="Bootstrap" width="80" height="80">BUSCATDOG
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- LISTA MENU -->
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <!-- DROPDOWN -->
+                        <li
+                            class="nav-item dropdown pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BUSQUEDA
+                            </a>
+                            <ul class="dropdown-menu p-3 pb-3">
+                                <li class="p-1"><a class="dropdown-item" href="../html/mascotaperdida.html">MASCOTAS
+                                        <br> PERDIDAS</a></li>
+                                <li class="p-1"><a class="dropdown-item"
+                                        href="../html/mascotasencontradas.html">MASCOTAS <br> ENCONTRADAS</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="../html/registrarmascota.html">REGISTRAR
+                                        <br> MASCOTA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" href="../html/adopcion.html">ADOPCIÓN</a>
+                        </li>
+                        <li class="nav-item pe-5 ps-sm-5 pb-sm-3 ps-lg-1 d-xl-flex justify-content-center text-center">
+                            <a class="nav-link" href="../html/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- FILTROS DE BUSQUEDA -->
+        <section>
+            <div class="container text-center">
+                <!-- ROW 1 -->
+                <div class="row ">
+                    <div class="col titulo-principal">
+                        <h1>Mascotas Encontradas</h1>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="row d-flex justify-content-center w-25">
+                    <div class="col-lg-12 titulos-secund">
+                        <h2>Filtros:</h2>
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <div class="row">
+                    <div class="col-lg-12 d-lg-flex justify-content-start campo-form">
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Tipo de Mascota</option>
+                            <option value="">Gato</option>
+                            <option value="">Perro</option>
+                        </select>
+
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Raza</option>
+                            <option value="" disabled>--GATO--</option>
+
+                            <option value="">No Sé</option>
+                            <option value="">Sin Raza</option>
+                            <option value="">Siamés</option>
+                            <option value="">Persa</option>
+                            <option value="">Ruso azul</option>
+                            <option value="">Somalí</option>
+                            <option value="">Siberiano</option>
+                            <option value="">Manés</option>
+
+                            <option value="" disabled>--PERRO--</option>
+
+                            <option value="">No Sé</option>
+                            <option value="">Sin Raza</option>
+                            <option value="">Beagle</option>
+                            <option value="">Border Collie</option>
+                            <option value="">Boxer</option>
+                            <option value="">Bulldog Frances</option>
+                            <option value="">Bulldog Ingles</option>
+                            <option value="">Labrador</option>
+                            <option value="">Dachshund </option>
+                        </select>
+
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Sexo</option>
+                            <option value="">No Sé</option>
+                            <option value="">Macho</option>
+                            <option value="">Hembra</option>
+                        </select>
+
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Manchas / Rayas</option>
+                            <option value="">Blanco</option>
+                            <option value="">Cafe Claro</option>
+                            <option value="">Cafe Oscuro</option>
+                            <option value="">Gris</option>
+                            <option value="">Negro</option>
+                        </select>
+
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Placa</option>
+                            <option value="">Con Placa</option>
+                            <option value="">Sin Placa</option>
+                        </select>
+
+                        <select class="me-lg-4">
+                            <option value="" selected disabled>Color</option>
+                            <option value="">Blanco</option>
+                            <option value="">Cafe Claro</option>
+                            <option value="">Cafe Oscuro</option>
+                            <option value="">Gris</option>
+                            <option value="">Negro</option>
+                            <option value="">Naranja</option>
+                        </select>
+
+                        <input type="date" id="fecha-filtro">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="btn-filtros">
+                        <input type="button" value="Buscar">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION CARDS -->
+        <section>
+            <div class="card-responsive mt-lg-5 text-center">
+                <!-- CARD 1 -->
+                <div class="card m-2">
+                    <img src="../img/gato_encontrado_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 18/08/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card m-2">
+                    <img src="../img/perro_encontrado_1.png" class="card-img-top rounded-bottom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 19/08/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card m-2">
+                    <img src="../img/gato_encontrado_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 23/08/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card m-2">
+                    <img src="../img/gato_encontrado_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 25/08/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card m-2">
+                    <img src="../img/perro_encontrado_2.jpg" class="card-img-top rounded-bottom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 09/09/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card m-2">
+                    <img src="../img/gato_encontrado_4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Encontrado 10/09/2022</p>
+                        <a href="detallesmascota.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- PAGINACION -->
+        <section>
+            <nav aria-label=" Page navigation example " class="paginacion">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row justify-content-center contenedor-footer" id="cont-foot">
+                <div class="col-lg-4">
+                    <h3 class="titulo-seccion">Síguenos en nuestras redes</h3>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="contenedor-icon">
+                        <li class="icon facebook">
+                            <span class="icon-nombre">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </li>
+                        <li class="icon twitter">
+                            <span class="icon-nombre">Twitter</span>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </li>
+                        <li class="icon instagram">
+                            <span class="icon-nombre">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col contenedor-footer">
+                    <p class="copy">© 2022 Matias Gonzalez Autelli / Todos los derechos reservados </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+body{
+    background: rgb(5,8,49);
+    background: linear-gradient(180deg, #050831 0%, #563041 13%, #472836 55%, #3b1d2a 100%);
+}
+@import "vars-mixin";
+@import "nav";
+@import "titulos-textos";
+@import "cards";
+@import "forms";
+@import "botones";
+@import "paginacion";
+@import "detalles-mascota";
+@import "footer";
+@import "media-querie";

@@ -1,0 +1,66 @@
+/* LOGO */
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.3s;
+    font-size: 2em;
+    color:$color-blanco;
+    
+    &:hover{
+        transform: scale(1.1);
+        color: $color-blanco;
+    }
+}
+
+    /* LISTAS DEL MENU */
+.nav-item{
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+    &:hover{
+        transform: scale(1.1);
+
+    }
+}
+    /* ENLACES DEL MENU */
+.nav-link{
+    border-radius: 12px;
+    display: block;
+    color: $color-blanco !important;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+
+    &:hover{
+        color: $color-negro !important;
+        background: $color-naranja;
+        border-radius: 12px;
+        transition: all 0.6s ease;
+    }
+}
+.navbar-toggler{
+    background-color: $color-blanco;    
+}
+
+    /* SUBMENU */
+
+.dropdown-menu{
+    background: $color-azul-oscuro;
+    border-radius: 8px; 
+}
+.dropdown-item{
+    color: $color-blanco;
+    font-size: 0.8em;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+
+    &:hover{
+        color: $color-negro;
+        background: $color-naranja;
+        border-radius: 12px;
+        transition: all 0.6s ease;
+        transform: scale(1.1);
+    }
+}

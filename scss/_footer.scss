@@ -1,0 +1,97 @@
+    /* FOOTER */
+#cont-foot{
+    padding-top: 60px;
+}
+.copy{
+    color: $color-blanco;
+    padding: 12px;
+    font-size: 0.9em;
+}
+.contenedor-icon {
+    display: inline-flex;
+    list-style: none;
+    height: max-content;
+    width: 100%;
+    justify-content: center;
+
+    .icon{
+        position: relative;
+        background: rgb(200, 196, 196);
+        border-radius: 50%;
+        margin: 0px 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        &:hover{
+            .icon-nombre{
+                top: -45px;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+        }
+    }
+    .icon-nombre{
+        position: absolute;
+        top: 0;
+        font-size: 0.6em;
+        background: $color-blanco;
+        color: $color-blanco;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .facebook{
+        &:hover{
+            background: #3b5998;
+            color: #fff;
+            .icon-nombre{
+                background: #3b5998;
+                color: #fff;
+                &::before{
+                    background: #3b5998;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .twitter{
+        &:hover{
+            background: #00acee;
+            color: #fff;
+            .icon-nombre{
+                background: #00acee;
+                color: #fff;
+                &::before{
+                    background: #00acee;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .instagram{
+        &:hover{
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            color: #fff;
+            .icon-nombre{
+                background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+                color: #fff;
+                &::before{
+                    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

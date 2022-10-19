@@ -1,0 +1,281 @@
+    /* MEDIA QUERIE */
+
+@media screen and (min-width: 1024px) and (max-width: 1399px){
+
+    /* CARDS */
+    .card-title{
+        font-size: 1.3em;
+    }
+    .card-text{
+        font-size: 1.1em;
+    }
+    .btn-primary{
+        font-size: 1.2em;
+    }
+    .card-responsive{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* MI HISTORIA */
+    .texto-mihistoria{
+        p{
+            font-size: 1em;
+        }
+    }
+
+    /* FORM */
+    .campo-form{
+        @include dis-grid(grid, repeat(4,1fr),0, 0);
+    }
+    .ubicacion{
+        display: flex !important;
+    }
+    #fecha-filtro{
+        height: 50px;
+        margin-bottom: 16px;
+    }
+    .form-registrar{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .form-contacto-registrar{
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 16px;
+    }
+    .form-contacto-registrar{
+        input{
+            width: 250px;
+        }
+    }
+
+    /* BOTONES */
+    #btn-filtros{
+        input{
+            padding: 0px;
+            height: 50px;
+        }  
+    }
+
+    /* DATOS MASCOTAS */
+    .datos-responsive{
+        @include dis-grid(grid, repeat(2,1fr),16px,0);
+        margin-top: 16px;
+        margin-bottom: 16px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* NAVBAR */
+    .navbar-logo{
+        font-size: 1.4em;
+    }
+    .dropdown-item{
+        &:hover{
+            transform: scale(1);  
+        }
+    }
+    /* CARDS */
+    .card-title{
+        font-size: 1.3em;
+    }
+    .card-text{
+        font-size: 1em;
+    }
+    .card-responsive{
+        @include dis-grid(grid, repeat(3,1fr),0 ,0);
+    }
+    /* BOTONES */
+    .btn-primary{
+        font-size: 1.2em;
+    }
+    #btn-filtros{
+        input{
+            padding: 0px;
+            height: 50px;
+            margin-top: 16px;           
+        }
+    }
+    /* FORM */
+    .form-registrar{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .campo-form{
+        select{
+            font-size: 1em;
+        }
+        input{
+            font-size: 1em;        
+        }
+    }
+    .form-contacto-registrar{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+
+        input{
+            width: 100%;
+        }
+    }
+    .foto-responsive{
+        input{
+            width: 90% !important;
+        }
+    }
+    #fecha-filtro{
+        height: 50px;
+    }
+    /* DATOS MASCOTA */
+    .detalles-mascotas{
+        grid-template-columns: 1fr;
+    }
+    .lista-detalles{
+        ul{
+            padding: 0;
+            
+            li{
+                display: grid;
+            }
+        }
+    }
+    .datos-responsive{
+        @include dis-grid(grid, 1fr, 16px, 0);
+        margin-top: 16px;
+        margin-bottom: 16px; 
+    }
+    /* FOOTER */
+    .contenedor-icon{
+        padding-right: 8px;
+        width: 250px;
+        padding-top: 25px;
+    }
+    #cont-foot{
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+
+    /* NAVBAR */
+    .navbar-logo{
+        font-size: 1.2em;
+    }
+    .nav-item {
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+    }
+    .dropdown-item{
+        font-size: 0.7em;
+    }
+
+    /* TITULOS */
+    .titulo-inicial{
+        h1{
+            font-size: .8em;  
+        }
+    }
+    /* TEXTOS */
+    .texto-inicial{
+        font-size: 1.2em;
+    }
+    .texto-mihistoria{
+        padding: 0 20px 0 20px;
+    }
+    /* CARDS */
+    .card-responsive {
+        @include dis-grid(grid, 1fr, 0, 0);
+        padding: 0px;
+    }
+    .card-title{
+        font-size: 1.3em;
+    }
+    .card-text{
+        font-size: 1em;
+    }
+    /* BOTONES */
+    .btn-primary{
+        font-size: 1.2em;
+    }
+    /* FORMS */
+    .form-registrar{
+        width: 100%;
+        @include dis-grid(grid, repeat(1,1fr), 8px, 0);
+    }
+    .campo-form{
+        select{
+            font-size: .9em;
+            width: 100% !important;
+            height: 50px;
+            margin-top: 16px;
+        }
+        input{
+            width: 100%;
+            font-size: .9em;
+        }
+    }
+    #fecha-filtro{
+        width: 100% !important;
+        height: 50px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: 600;
+    }
+    .form-label{
+        font-size: 1em;
+    }
+    .form-control{
+        font-size: .9em;
+        width: 100% !important;
+    }
+    .foto-responsive{
+        @include dis-grid(grid, 1fr, 0, 0);
+        width: 100%;
+    }
+    .form-contacto-registrar{
+        grid-template-columns: 1fr;
+    }
+    .form-contacto-registrar{
+        input{
+            width: 100% !important;
+        }
+    }
+
+    /* DATOS MASCOTA */
+    .detalles-mascotas{
+        grid-template-columns: 1fr;
+    }
+    .lista-detalles{
+        ul{
+            padding: 0;
+
+            li{
+                display: grid;
+            }
+        }
+    }
+    .datos-responsive{
+        @include dis-grid(grid, 1fr, 16px, 0);
+        margin-top: 16px;
+        margin-bottom: 16px; 
+    }
+
+    /* FOOTER */
+
+    .contenedor-icon{
+        padding-right: 8px;
+        width: 250px;
+        padding-top: 25px;
+    }
+    #cont-foot{
+        padding-top: 0;
+    }
+    /* PAGINACION */
+    .paginacion{
+        ul{
+            @include dis-grid(grid, 1fr, 0, 0);
+            width: 100%;
+            li{
+                margin: 16px 16px 0 16px;
+            }
+        }
+
+    }
+}

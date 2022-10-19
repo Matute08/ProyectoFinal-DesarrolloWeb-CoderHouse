@@ -1,0 +1,52 @@
+    /* TITULOS */
+
+.titulo-home{
+    padding: 16px;
+    font-size: 3em;
+    padding: 16px ;
+    text-decoration:underline;
+    color: $color-aqua;
+}
+.titulo-mihistoria{
+    font-size: 1.8em;
+    color: $color-aqua;
+    text-decoration:underline;
+}
+.titulo-principal{
+    color:$color-aqua;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        padding: 16px;
+        border: #a0e2b3 solid 3px;
+        border-radius: 8px 32px;
+    }
+}
+.titulos-secund{
+    color: $color-blanco;
+    text-decoration:underline;
+    font-size: 1.2em;
+    padding: 16px;
+}
+.titulo-seccion{
+    color: $color-aqua;
+    padding: 12px;
+    font-size: 1.3em;
+    height: min-content;
+}
+
+    /* TEXTOS */
+.texto-mihistoria{
+    color: $color-blanco;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.texto-inicial{
+    font-size: 1.3em;
+    padding: 16px;
+    color: $color-blanco;
+}

@@ -1,0 +1,16 @@
+// Variables
+$color-violeta: #563041;
+$color-azul-oscuro: #050831;
+$color-naranja:#eb6b56;
+$color-negro:#000000;
+$color-blanco: #ffffff;
+$color-violeta-oscuro: #55283c;
+$color-aqua: #47b39d;
+
+// Mixin
+@mixin dis-grid($display, $template, $gap-row, $gap-column) {
+    display: $display;
+    grid-template-columns: $template;
+    grid-row-gap: $gap-row;
+    grid-column-gap: $gap-column;
+}

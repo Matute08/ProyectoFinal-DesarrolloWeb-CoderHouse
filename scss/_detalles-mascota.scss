@@ -1,0 +1,44 @@
+    /* DETALLES MASCOTA */
+.detalles-mascotas{
+    @include dis-grid(grid, repeat(2,1fr), 32px, 32px);
+}
+.lista-detalles{
+    background: rgba(143, 98,119, 0.2);
+    color: $color-blanco;
+    border-radius: 18px;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding: 8px;
+            font-size: 1.3em;
+
+            p{
+                padding-left: 16px;
+                display: inline-block;
+            }
+            strong{
+                color: #ffffff;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.imagen-detalles{
+    background: rgba(143, 98,119, 0.2);
+    border-radius: 18px;
+    display: grid;
+    align-items: center;
+}
+.datos-contacto{
+    div{
+        line-height: 1.5;
+        margin-left: 32px;
+        padding: 12px;
+        background: rgba(235, 107, 86,0.6);
+        color: $color-blanco;
+        border-radius: 18px 8px;
+        font-size: 1.2em;
+    }
+}
